@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ODASTUDIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        02
+        $(function() {
+            03
+            $('a[href^=#]').click(function() {
+                04
+                var speed = 500;
+                05
+                var href = $(this).attr("href");
+                06
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                07
+                var position = target.offset().top;
+                08
+                $("html, body").animate({
+                    scrollTop: position
+                }, speed, "swing");
+                09
+                return false;
+                10
+            });
+            11
+        });
+        12
+
+    </script>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div id="main">
+
+            <div class="contents1">
+
+                <div class="video-wrap">
+                    <video src="top.mp4" width="100%" autoplay loop>
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="moment">
+                <div class="tag-white">
+                    Cherish Every Moment
+                </div>
+                <img src="border-white.png" alt="" class="tag-photo">
+                <p>ODASTUDIO</p>
+                <a href="#about-us"><img src="pagedown_white.png" alt="" class="pagedown"></a>
+
+            </div>
+
+
+            <div id="about-us">
+                <div class="tag">About Us</div>
+                <img src="border2.png" alt="" class="tag-photo">
+                <h2>ODASTUDIO(オダスタジオ)は、小田昭二を代表とする1983年に設立した撮影・編集を行うフォトスタジオです。<br>
+                    ODASTUDIOの立地は新宿区曙橋駅からも徒歩3分の、靖国通りに面した集合住宅の6階にあります。<br>
+                    キッズ・モデル撮影をはじめ、雑誌やカタログなどの商品撮影など、様々なシチュエーションでご利用いただけます。<br>
+                    ODASTUDIOが最高の一枚をお届けします。
+                </h2>
+
+                <div class="shoji-oda">
+                    <img src="shojioda.png" alt="" class="profile-shoto">
+                    <div class="name">Shoji Oda</div>
+                    <img src="border2.png" alt="" class="tag-photo">
+                    <div class="profile">Cameraman Profile</div>
+                    <div class="profile-detail">香川県丸亀市出身<br>
+                        東急グループのスタジオを経てフリーランス<br>
+                        1983年より西麻布にオダスタジオを設立。<br>
+                        1999年からスタジオを曙橋に移転して現在に至る。
+                    </div>
+                </div>
+                <div class="shusuke-oda">
+                    <img src="shusuke_2.png" alt="" class="profile-shoto">
+                    <div class="name">Shusuke Oda</div>
+                    <img src="border2.png" alt="" class="tag-photo">
+                    <div class="profile">Assistant Profile</div>
+                    <div class="profile-detail">神奈川県川崎市出身<br>
+                        1996年7月26日生まれ<br>
+                        現在、中央大学経済学部在学中。<br>
+                        サッカーと海外旅行が好き。<br>
+                    </div>
+                </div>
+                <a href="#photo-scene"><img src="pagedown.png" alt="" class="pagedown"></a>
+            </div>
+
+
+            <div id="photo-scene">
+                <div class="tag-white">Photo Scene</div>
+                <img src="border-white.png" alt="" class="tag-photo">
+                <p>実際に撮影された写真を厳選してお届けいたします。<br>
+                    デジタルカメラの進化で自然光でも高画質のような撮影ができるようになりましたが、<br>
+                    完璧な商品撮影をする場合は照明を適材適所で使います。<br>
+                    アンブレラの大きさを変えるテクニックがプロフェショナルです。</p>
+                <div class="images">
+                    <img src="%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A_6.jpg" alt="" width="20.6%" class="light">
+
+                    <div class="second">
+                        <img src="23231384_603249756465810_7321473492885578451_n.png" alt="" width="100%" class="camera3">
+                        <img src="23519392_609665415824244_1612632350400872947_n.png" alt="" width="100%" class="beer">
+                    </div>
+                    <div class="third">
+                        <img src="名称未設定_10.jpg" alt="" width="100%" class="ninjin">
+                        <img src="_DSC9721_xxx.jpg" alt="" width="100%" class="blue">
+                    </div>
+
+                    <div class="forth">
+                        <img src="名称未設定_5.jpg" alt="" width="100%" class="ham">
+                        <img src="%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A_7.jpg" alt="" width="100%" class="nabe">
+                    </div>
+                    <img src="%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A_8.jpg" alt="" width="15.5%" class="watch">
+                </div>
+
+
+                <a href="#floor-map"><img src="pagedown_white.png" alt="" class="pagedown_white"></a>
+
+            </div>
+
+            <div id="floor-map">
+                <div class="floor-map-content">
+                    <div class="tag">Floor Map</div>
+                    <img src="border2.png" alt="" class="tag-photo">
+                    <h1>ワンフロア全体を使用したフォトスタジオ。多角的での撮影を実現。<br>
+                        お客様一人一人に合わせて、スタジオにしか出せない質感をお届けします。</h1>
+                    <img src="Floormap.png" alt="" class="map">
+                    <div class="angle1">
+                        <div class="angle-name">Angle1</div>
+                        <img src="_ODA6082_xx.jpg" alt="">
+                        <p>人物撮影・商品撮影は質感を優先した<br>
+                            丁寧な撮影をします。撮りたい写真に<br>
+                            合わせて、バック紙・照明の機材を組み<br>
+                            合わせ個性を引き出します。</p>
+                    </div>
+                    <div class="angle2">
+                        <div class="angle-name">Angle2</div>
+                        <img src="%E5%90%8D%E7%A7%B0%E6%9C%AA%E8%A8%AD%E5%AE%9A_9.jpg" alt="">
+                        <p>自然光の入るサブルームは小さなハウス<br>
+                            スタジオ。人気の白いフローリングで<br>
+                            アットホームな明るい雰囲気で<br>
+                            キッズ撮影もスムーズ。</p>
+                    </div>
+                </div>
+                <a href="#flow"><img src="pagedown.png" alt="" class="pagedown_white"></a>
+            </div>
+
+
+
+
+
+
+        </div>
+        <div id="flow">
+            <div class="tag-white">Flow</div>
+            <img src="border-white.png" alt="" class="tag-photo">
+            <p>ご利用までの流れ</p>
+            <div class="steps">
+                <div class="step1">
+                    <img src="PC.png" alt="" class="pic">
+                    <div class="step">Step1</div>
+                    <div class="step-en">Reserve</div>
+                    <p>予約する<br>
+                        <br>
+                        電話・メールから<br>
+                        日時や時間を指定して<br>
+                        予約してください。</p>
+                </div>
+                <div class="step2">
+                    <img src="pic.png" alt="" class="pic">
+                    <div class="step">Step2</div>
+                    <div class="step-en">Shooting</div>
+                    <p>
+                        撮影する<br>
+                        <br>
+                        ODASTUDIOにて<br>
+                        枚数に合わせて<br>
+                        ご希望の写真を撮影いたします。</p>
+                </div>
+                <div class="step3">
+                    <img src="file.png" alt="" class="pic">
+                    <div class="step">Step3</div>
+                    <div class="step-en">Receive</div>
+                    <p>受け取る<br>
+                        <br>
+                        撮影した写真にレタッチを<br>
+                        加えたデータを、撮影後<br>
+                        １週間以内に納品します。</p>
+                </div>
+            </div>
+            <a href="#price"><img src="pagedown_white.png" alt="" class="pagedown"></a>
+        </div>
+
+        <div id="price">
+            <div class="tag-white"> Price</div>
+            <img src="border-white.png" alt="" class="tag-photo">
+            <p>ODASTUDIOでは、ホームページからお問合せのお客様や、外注費が決まってないお客様向けにクオリティーと低コストを両立させた、時間制の撮影料金を設定しました。<br>
+                撮影料にはバック紙などの料金も含まれ、決定後は追加料金はありません。<br>
+                データはご指定のファイル形式で納品致します。見積りは無料、撮影点数から時間＝撮影料を算出して、24時間以内にメール返信致します。<br>
+                撮影のされないお客様には、メールやフリーサーバーで画像をお送りすることもできます。
+            </p>
+
+            <div class="plan1">
+                <div class="plan">1hour plan</div>
+                <h3>1時間プラン<br>
+                    15,000円(+税)<br>
+                    <br>
+                    モデル撮影 3カット<br>
+                    <br>
+                    撮影翌日JPEG 仮データ納品<br>
+                    4日後 本データ納品<br>
+                    <br>
+                    ex.宣材・オーディション撮影</h3>
+            </div>
+            <div class="plan3">
+                <div class="plan">3hours plan</div>
+                <h3>3時間プラン<br>
+                    45,000円(+税)<br>
+                    <br>
+                    切り抜き撮影 40カット<br>
+                    <br>
+                    撮影翌日JPEG 仮データ納品<br>
+                    4日後 本データ納品<br>
+                    <br>
+                    ex.雑誌撮影</h3>
+            </div>
+            <div class="plan5">
+                <div class="plan">5hours plan</div>
+                <h3>5時間プラン<br>
+                    75,000円(+税)<br>
+                    <br>
+                    モデル撮影 8カット<br>
+                    商品撮影 8カット<br>
+                    撮影翌日JPEG 仮データ納品<br>
+                    6日後 本データ納品<br>
+                    <br>
+                    ex.商品撮影</h3>
+            </div>
+            <div class="plan6">
+                <div class="plan">6hours plan</div>
+                <h3>6時間プラン<br>
+                    90,000円(+税) <br>
+                    <br>
+                    切り抜き撮影 40カット<br>
+                    カクハン集合撮影<br>
+                    撮影翌日JPEG 仮データ納品<br>
+                    4日後 本データ納品<br>
+                    <br>
+                    ex.カタログ撮影</h3>
+            </div>
+            <a href="#access"><img src="pagedown_white.png" alt="" class="pagedown_white"></a>
+        </div>
+
+
+        <div id="access">
+            <div class="tag">Access</div>
+            <img src="border2.png" alt="" class="tag-photo">
+            <p>〒162-0065 東京都新宿区住吉町3-7 スカイヴィレジ6F <br>
+                都営新宿線曙橋駅(出口A2)より徒歩3分
+            </p>
+            <div class="button">
+
+                <nav2>
+                    <ul>
+                        <div class="communication1">
+                            <div class="item">Tel </div>
+                            <img src="border2.png" alt="" class="tag-photo">
+                            <li1>
+
+                                <a href="tel:0333584421" tel:>03-3358-4421</a>
+                            </li1>
+                        </div>
+                        <div class="communication2">
+                            <div class="item">E-Mail </div>
+                            <img src="border2.png" alt="" class="tag-photo">
+                            <li2>
+                                <a href="mailto:shoji-oda@mui.biglobe.ne.jp">shoji-oda@mui.biglobe.ne.jp</a>
+
+                            </li2>
+                        </div>
+                    </ul>
+                </nav2>
+
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3896015228247!2d139.71770951525914!3d35.692029080191794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cee500d93ed%3A0xa5eae0c6a4876bba!2z44Kq44OA44K544K_44K444Kq!5e0!3m2!1sja!2sjp!4v1538915586342" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+
+        <a href="#main"><img src="pageup.png" alt="" class="pageup"></a>
+
+
+        <div class="bottom">
+            <img src="odastudio_logo2.png" alt="" width="100%">
+        </div>
+        <h5>©️Copyright ODASTUDIO, All Rights Reserved.</h5>
+    </div>
+</body>
+
+</html>
